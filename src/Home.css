@@ -1,0 +1,27 @@
+.home__image {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+  z-index: -5;
+}
+.home {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home__row {
+  object-fit: contain;
+  display: grid;
+  max-width: 1250;
+  margin-right: 50px;
+  margin-left: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-gap: 10px 40px;
+  background-color: rgb(234 237 237);
+}
+
+.home__row > div {
+  align-items: space-evenly;
+}
